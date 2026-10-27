@@ -3,6 +3,10 @@
 .productPage {
   @include main.content-padding-inline;
 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
   &__title {
     margin-bottom: 8px;
 
@@ -69,5 +73,9 @@
     font-weight: 500;
     color: var(--color-gray-secondary);
     text-align: center;
+  }
+
+  &__pagination {
+    margin-top: auto;
   }
 }

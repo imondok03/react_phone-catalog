@@ -8,7 +8,6 @@
     flex-direction: column;
     gap: 32px;
 
-    margin-top: 64px;
     padding-block: 32px;
 
     @include main.content-padding-inline;
@@ -17,10 +16,6 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-    }
-
-    @include main.on-desktop {
-      margin-top: 80px;
     }
   }
 

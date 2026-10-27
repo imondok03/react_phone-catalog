@@ -169,12 +169,14 @@ export const ProductPage: FC<Props> = ({ category }) => {
           <ProductsList products={currentItems} displayType="with-discount" />
 
           {itemsPerPage !== 'All' && totalPages > 1 && (
-            <Pagination
-              total={countVisibleProducts}
-              perPage={+itemsPerPage}
-              currentPage={currentPage}
-              onPageChange={handlePageChange}
-            />
+            <div className="productPage__pagination">
+              <Pagination
+                total={countVisibleProducts}
+                perPage={+itemsPerPage}
+                currentPage={currentPage}
+                onPageChange={handlePageChange}
+              />
+            </div>
           )}
         </>
       ) : null}
